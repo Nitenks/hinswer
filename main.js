@@ -270,6 +270,18 @@ particlesJS('particles-js', {
             behavior: 'smooth'
         });
     }
+// Función para rellenar el formulario de contacto y redirigir a la sección de contacto
+function fillContactForm(packageName) {
+    // Rellenar el campo de mensaje con la oferta seleccionada
+    const messageField = document.getElementById('message');
+    messageField.value = `Estoy interesado en el ${packageName}. Por favor, envíenme más información y detalles sobre esta oferta.`;
+
+    // Desplazar la página a la sección de contacto
+    document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+
+    // Opcional: Enviar el formulario automáticamente (descomentar si se desea)
+    // document.getElementById('contactForm').submit();
+}
 
 
 
