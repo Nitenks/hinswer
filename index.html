@@ -343,7 +343,6 @@
         
         <div class="row">
             <div class="col-md-12">
-                <!-- Formulario de contacto -->
                 <form id="contact-form" action="send-mail.php" method="POST" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nombre</label>
@@ -360,12 +359,13 @@
                     <div class="form-group">
                         <label for="service">Servicio Requerido</label>
                         <select id="service" name="service" class="form-control" required>
+                            <option value="Paquetes">Paquetes</option>
                             <option value="" disabled selected>Selecciona un servicio</option>
-                            <option value="Paquetes">Ofertas</option>
                             <option value="Diseño Web Personalizado">Diseño Web Personalizado</option>
                             <option value="Desarrollo de Páginas Web">Desarrollo de Páginas Web</option>
                             <option value="Optimización y Mantenimiento">Optimización y Mantenimiento</option>
                             <option value="Consultoría en Estrategia Web">Consultoría en Estrategia Web</option>
+                            
                             <option value="Otros">Otros</option>
                         </select>
                     </div>
@@ -384,17 +384,12 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea id="message" class="form-control textarea" rows="5" name="message" required></textarea>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tu mensaje" required></textarea>
                     </div>
-                    
                     <button type="submit" class="btn btn-custom">Enviar Cotización</button>
                 </form>
             </div>
         </div>
-    </div>
-</section>
-
-
 
         <!-- Información Adicional de Contacto -->
         <div class="row mt-5">
@@ -503,3 +498,4 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 </html>
+
